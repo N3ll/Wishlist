@@ -1,0 +1,23 @@
+<div>
+    <div class="row ma-filters">
+        <div class="col-md-6">
+            <h3>{{userWishing.emails[0].address}}</h3>
+            <div [hidden]="length">No wishes!Surprise them!</div>
+        </div>
+    </div>
+    <div class="row" [hidden]="!user">
+        <div class="col-md-6 ">
+            <ul class="list-group ma-wishes-col">
+                <li *ngFor="let wish of wishes | async" class="list-group-item ma-wish-item">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2 class="ma-wish-name">
+                                <button [ngClass]="{'crossed': wish.crossed }" (click)="markPresent(wish._id)">{{wish.name}}</button>
+                            </h2>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

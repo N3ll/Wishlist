@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-faded">
+    <a class="navbar-brand" [routerLink]="['/']">Socially</a>
+    <a [routerLink]="['/friends']">Friends</a>
+    <a [routerLink]="['/wish-list']">My wishes</a>
+    <login-buttons class="pull-right "></login-buttons>
+</nav>
+
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>

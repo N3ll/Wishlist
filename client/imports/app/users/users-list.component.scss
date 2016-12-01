@@ -1,0 +1,24 @@
+@import "../colors";
+
+.ma-users-col {
+  padding-top: 20px;
+}
+
+.ma-filters {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.ma-user-item {
+  .ma-user-name {
+    a {
+      color: $color6;
+      text-decoration: none !important;
+      font-weight: 400;
+    }
+  }
+}
+
+.search-form {
+  margin-bottom: 1em;
+}

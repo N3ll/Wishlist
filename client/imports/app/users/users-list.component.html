@@ -1,0 +1,24 @@
+<div>
+    <div class="row ma-filters">
+        <div class="col-md-6">
+            <h3>See your friends wish list:</h3>
+            <div [hidden]="user">You need to login to make a wish list!</div>
+            <div [hidden]="users.count!=0 || !user">Invite some friends!</div>
+        </div>
+    </div>
+    <div class="row" [hidden]="!user">
+        <div class="col-md-6 ">
+            <ul class="list-group ma-users-col">
+                <li *ngFor="let user of users" class="list-group-item ma-user-item">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2 class="ma-user-name">
+                                <a [routerLink]="['/wish', user._id]">{{user.emails[0].address}}</a>
+                            </h2>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

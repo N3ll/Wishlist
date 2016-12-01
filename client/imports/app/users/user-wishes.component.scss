@@ -1,0 +1,29 @@
+@import "../colors";
+
+.wishes {
+  padding-top: 20px;
+}
+
+.ma-filters {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.ma-wish-item {
+  .ma-wish-name {
+    button {
+      color: $color6;
+      font-weight: 400;
+      background: transparent;
+      border:none;
+    }
+  }
+}
+
+.search-form {
+  margin-bottom: 1em;
+}
+
+.crossed{
+  text-decoration: line-through;
+}
